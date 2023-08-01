@@ -1,4 +1,4 @@
-// Start the server and listen for incoming requests to our API
+// Start the server and listen for incoming requests to the API
 
 // Get environment variables
 require('dotenv').config();
@@ -6,8 +6,8 @@ require('dotenv').config();
 // Import the application
 const app = require('./app');
 
-// Have the app listen
-const PORT = process.env.PORT || 9000;
+// Server listening for requests on PORT
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}...`);
 });
